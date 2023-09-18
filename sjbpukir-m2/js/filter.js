@@ -70,9 +70,11 @@ document.querySelector('#SortPricedesc').addEventListener('click', function(){
     reboot();
 });
 
+jet.style.display = 'none';
 document.querySelector('#laser').addEventListener('click', function(){
-    let arr = goods.querySelectorAll('#jet');
-    for(let elem of arr){
-        elem.style.display = none;
+    for (let i = 0; i < goodsPage.length; i++) {
+        if(goodsPage[i].getAttribute('id') == 'jet'){
+            goodsPage[i].getAttribute('id').style.display = 'none';
+        }
     }
 });
