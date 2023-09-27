@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title></title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav_container">
+                <div class="logo">
+                    <img src="../media/logo.png" alt="logo" class="logo_img" /><br>
+                    <a href="../index.html" class="logo_text">Copy Star</a>
+                </div>
+                <a href="../index.html">О нас</a>
+                <a href="katalog.html">Каталог</a>
+                <a href="cart.html">Корзина</a>
+                <a href="findUs.html">Где нас найти?</a>
+                <a href="orders.html">Заказы</a>
+                <a href="../index.html#entry">Вход</a>
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+        <h2 align="center">Категории</h2>
+        <hr>
+        <input type="text" name="" id="" placeholder="Название категории"><button>Добавить</button>
+        <div style="clear: both;"></div>
+        <select name="" id="" class="category">
+            <option value="0">Категории</option>
+            <option value="1">Струйные</option>
+            <option value="2">Лазерные</option>
+        </select>
+        <button>Удалить</button>
+        <hr>
+        <h2 align="center">Добавить товар</h2>
+        <input type="text" name="" id="" placeholder="Название">
+        <input type="text" name="" id="" placeholder="Цена">
+        <input type="text" name="" id="" placeholder="Страна производитель">
+        <input type="text" name="" id="" placeholder="Год выпуска">
+        <input type="text" name="" id="" placeholder="Модель">
+        <input type="text" name="" id="" placeholder="Категория">
+        <input type="text" name="" id="" placeholder="Количество на складе">
+        <span class="h2">Фотография товара</span><br>
+        <button>Выбор файла</button><br>
+        <button>Добавить</button>
+        <h2 align="center">Заказы</h2>
+        <hr>
+        <button id="ordersFilterAll">Все</button>
+        <button id="ordersFilterNew">Новые</button>
+        <button id="ordersFilterConfirm">Подтверждённые</button>
+        <button id="ordersFilterReject">Отклонённые</button>
+        <hr>
+        <div class="cart_cards2">
+            <div class="cart_card2" id="new">
+                <h2>Заказ 23134</h2>
+                <p>Заказчик: Иванов Иван</p>
+                <p>Статус: Новый</p>
+                <p>Количество товаров: 4</p>
+                <a href="#">Подтвердить заказ</a>
+                <p>Отменить заказ</p>
+                <input type="text" placeholder="Причина отмены">
+                <a href="#">Отменить заказ</a>
+            </div>
+            <div class="cart_card2" id="confirm">
+                <h2>Заказ 23546</h2>
+                <p>Заказчик: Иванов семён</p>
+                <p>Статус: Подтверждённый</p>
+                <p>Количество товаров: 1</p>
+            </div>
+            <div class="cart_card2" id="reject">
+                <h2>Заказ 72365</h2>
+                <p>Заказчик: Скитер Максим</p>
+                <p>Статус: Отклонённый</p>
+                <p>Количество товаров: 24</p>
+                <h3>Причина отклонения:</h3>
+                <p>Слишком много товаров</p>
+            </div>
+            <div class="cart_card2" id="reject">
+                <h2>Заказ 38764</h2>
+                <p>Заказчик: Горбунов Артём</p>
+                <p>Статус: Отклонённый</p>
+                <p>Количество товаров: 24</p>
+                <h3>Причина отклонения:</h3>
+                <p>Слишком много товаров</p>
+            </div>
+            <div class="cart_card2" id="new">
+                <h2>Заказ 34876</h2>
+                <p>Заказчик: Пупкин Василий</p>
+                <p>Статус: Новый</p>
+                <p>Количество товаров: 4</p>
+                <a href="#">Подтвердить заказ</a>
+                <p>Отменить заказ</p>
+                <input type="text" placeholder="Причина отмены">
+                <a href="#">Отменить заказ</a>
+            </div>
+            <div class="cart_card2" id="confirm">
+                <h2>Заказ 55437</h2>
+                <p>Заказчик: Петров Иван</p>
+                <p>Статус: Подтверждённый</p>
+                <p>Количество товаров: 1</p>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+    <footer>
+        <nav>
+            <div class="nav_container">
+                <a href="#">О нас</a>
+                <a href="katalog.html">Каталог</a>
+                <a href="cart.html">Корзина</a>
+                <a href="#">Где нас найти?</a>
+                <a href="orders.html">Заказы</a>
+                <a href="../index.html#entry">Вход</a>
+            </div>
+        </nav>
+    </footer>
+    <script src="../js/ordersFilter.js"></script>
+</body>
+</html>
